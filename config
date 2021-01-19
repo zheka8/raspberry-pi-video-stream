@@ -1,0 +1,14 @@
+
+sudo apt-get install vlc
+sudo modprobe bcm2835-v4l2
+v4l2-ctl -V
+
+# view in VLC:
+rtsp://###.###.###.###:8554/x
+raspivid -o - -t 0 -n -w 1280 -h 1024 -fps 60 | cvlc -vvv stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/stream}' :demux=h264 --h264-fps=60 &
+
+#### Using Motion
+sudo apt install motion
+https://www.techradar.com/how-to/computing/use-a-raspberry-pi-to-remotely-watch-your-home-1314466
+
+# set GPU memory to 256 via raspi-config???
