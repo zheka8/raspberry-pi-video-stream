@@ -6,7 +6,6 @@ URL="rtmp://lhr04.contribute.live-video.net/app/"
 QUAL=20
 WIDTH=640
 HEIGHT=480
-TWITCH_STREAM_KEY=live_638986575_yV6fOH3gtrWlOMF5VVvUKCxvYLbkvB
 
 if [ $ROT -eq 180 ]
 then
