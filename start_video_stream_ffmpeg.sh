@@ -1,5 +1,9 @@
 #!/bin/bash
 
+source stream_keys.sh
+
+echo $TWITCH_STREAM_KEY
+
 FPS=25
 ROT=180
 URL="rtmp://lhr04.contribute.live-video.net/app/"
