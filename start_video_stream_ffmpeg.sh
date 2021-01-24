@@ -1,5 +1,9 @@
 #!/bin/bash
-source stream_keys.sh
+
+full_path=$(realpath $0)
+dir_path=$(dirname $full_path)
+
+source $dir_path/stream_keys.sh
 
 FPS=10
 ROT=90
