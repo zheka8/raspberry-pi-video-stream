@@ -1,3 +1,1 @@
-*start stream on reboot
-*ssh command to start and stop stream from laptop
 *remote command to start and stop stream via http?
