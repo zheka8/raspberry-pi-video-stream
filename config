@@ -31,6 +31,4 @@ ffmpeg -re -f s16le -i /dev/zero -f v4l2 -thread_queue_size 512 -codec:v h264 -s
 ##### Instructions
 place ffmpeg_stream.service in /etc/systemd/system
 to start/stop:
-  sudo systemctrl [start|stop] ffmpeg_stream.service
-
-
+  sudo systemctl [start|stop] ffmpeg_stream.service
